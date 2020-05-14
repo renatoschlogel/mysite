@@ -1,13 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('https://decoratons.vteximg.com.br/arquivos/ids/159031-1000-1000/papel-de-parede-madeira-demolicao-preta.jpg');
+  background-image: url('../img/fundo.jpg');
   background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
+  font-size: 10px;
 }
 
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
 .menu li {
@@ -34,7 +61,19 @@ a:hover {
   text-align: center;
 }
 
+.site-title {
+  font-size: 4em;
+}
+
 .site-subtitle {
   font-style: italic;
 }
 
+.itens-portifolio {
+  display: flex;
+}
+
+.img-portfolio {
+  height: 250px;
+  width: 250px;
+}
